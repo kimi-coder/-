@@ -1,0 +1,264 @@
+
+/* *{
+     outline:1px solid red;
+} */
+.energy {
+    position: relative;
+    width: 50px;
+    height: 50px;
+        }
+
+.energy span {
+    position: absolute;
+    width: calc(40px + var(--i));
+    height: calc(40px + var(--i));
+    background: var(--clr);
+    border-radius: 50%;
+    transform-origin: calc(100px + var(--i));
+    animation: animate 5s linear infinite;
+    animation-duration: calc(var(--d));
+    mix-blend-mode: plus-lighter;
+    filter: blur(30px);
+       }
+
+.energy span:nth-child(even) {
+    animation-direction: reverse;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}   
+header{
+    background: linear-gradient(rgb(24, 13, 3), rgb(54, 50, 42) 75%,rgb(0, 0, 0));
+}
+
+.herosection{
+    width: 100%;
+    background: url(images/bwg-1-已修復.png) center ;
+    background-size: cover;
+
+}
+/* .container{
+    padding-top: 30px;
+
+} */
+.heroImg{
+   width: 20%
+}
+.sticktrimg{ 
+border : 2px solid #c28366;
+border-radius: 50px;
+    
+    
+}
+
+
+.main{ 
+     
+width: 100%;
+background: url(images/k.png) center ;
+background-size: contain ;
+
+/* height: 40vh;     */
+}
+.mainImg{
+    width: 5%;
+}
+.mycard{
+    width: 100%;
+    background: url(images/Group\ 18.png) center no-repeat;
+    background-size: cover;
+}
+.mycards{
+    width:80%;
+}
+.Mycards{
+    width:80%;
+}
+.Mycardss{
+    width:70%;
+}
+.Rmycards{
+    width: 70%;
+}
+.black-bg{
+    width: 100%;
+    background: url(images/桌機-已修復.png) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.bottle{
+background: url(images/紙1.png) center no-repeat;
+width: 100%;
+background-size: cover;
+/* height: 95vh; */
+
+}
+footer{
+    width: 100%;
+    background: url(images/Group\ 33.png) center no-repeat;
+    background-size: cover;
+ 
+}
+.slider-window {
+    max-width: 336px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.img-wrap {
+    width: 500%;
+    left: 0px;
+    transition: 0.5s;
+    transform: translateX(0px);
+}
+
+li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: 50% bottom; */
+}
+
+.slider-dots {
+    bottom: 0;
+}
+
+.slider-dots li {
+    width: 40px;
+    height: 10px;
+    margin: 0 4px;
+    border: 1px solid #f7deb9;
+}
+
+
+.btnPrev,
+.btnNext {
+    background: rgb(255, 221, 148);
+    border: 1px solid rgb(78, 78, 0);
+    border-radius: 20%;
+    aspect-ratio: 1/1;
+    width: 60%;
+}
+.col-img-sticker{
+    background:url(images/kimi\ 1.png) center  !important;
+    background-size: contain;
+    margin-top: 100px !important;
+    
+}
+.Menu-bg{
+    background: url(images/BK.png) center  ;
+    background-size: cover;
+}
+.flower-bo{
+    background: url(images/黑底.png) center;
+    background-size: 50% 90%;
+}
+.battle{
+    transform: translatey(0px);
+	animation: floaa 8s ease-in-out infinite;
+}
+@keyframes floaa {
+	0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+.R-bottle{
+    transform: translatey(0px);
+	animation: floats 4s ease-in-out infinite;
+}
+@keyframes floats {
+	0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-40px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+.G-bottle{
+    transform: translatey(0px);
+	animation: float 10s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+	
+		transform: translateX(0px);
+	}
+	50% {
+	
+		transform: translateX(-40px);
+	}
+	100% {
+		
+		transform: translateX(0px);
+	}
+}
+.PY{
+    transform: translatey(0px);
+	animation: flef 5s ease-in-out infinite;
+}
+@keyframes flef {
+	0% {
+	
+		transform: translateX(0px);
+	}
+	50% {
+	
+		transform: translateX(-20px);
+	}
+    75%{
+        transform: translateX(50px);
+    }
+	100% {
+		
+		transform: translateX(0px);
+	}
+}
+  .dodge {
+      background: radial-gradient(circle,rgb(46, 42, 46),rgb(0, 0, 0) 35%) center / 25% 25%;
+      position: absolute;
+      top:-100%;
+      left:-100%;
+      right:0;
+      bottom:0;
+      mix-blend-mode: color-dodge;
+      animation: dodge-area 5s linear infinite;
+  }
+  @keyframes dodge-area {
+      0% {
+          transform: translate(25%,25%);
+      }
+      50%{
+        transform: translate(50%,50%);
+      }
+      100%{
+        transform: translate(100%,50%);
+      }
+
+  }
+  /* .Mycards::before {
+
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+} */
